@@ -1,0 +1,23 @@
+@mixin on-tablet {
+  @media (min-width: 640px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media (min-width: 1024px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin on-desktop-plus {
+  @media (min-width: 1201px) {
+    @content;
+  }
+}
+
+@mixin on-tablet-and-above {
+  @media (min-width: 640px) {
+    @content;
+  }
+}

@@ -1,0 +1,137 @@
+.header {
+  // height: 100vh;
+  // box-sizing: border-box;
+
+  @include on-tablet {
+    background-image: url(images/Cookie.png);
+    background-repeat: no-repeat;
+    background-position: center top 210px;
+    background-size: 320px;
+  }
+
+  @include on-desktop {
+    height: 100vh;
+    background-image: url(images/Cookie.png);
+    background-repeat: no-repeat;
+    background-position: center top 80px;
+    background-size: 550px;
+  }
+
+  @include on-desktop-plus {
+    height: 100vh;
+    background-image: url(images/Cookie.png);
+    background-repeat: no-repeat;
+    background-position: center top 80px;
+    background-size: 590px;
+  }
+
+  &__nav {
+    margin-bottom: 32px;
+
+    @include on-tablet {
+      margin-bottom: 80px;
+    }
+
+    @include on-desktop {
+      margin-bottom: 135px;
+    }
+
+    @include on-desktop-plus {
+      margin-bottom: 144px;
+    }
+  }
+
+  &__paragraph {
+    padding-bottom: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: $c-black;
+
+    @include on-tablet {
+      width: 280px;
+      padding-bottom: 146px;
+      text-align: start;
+    }
+
+    @include on-desktop {
+      width: 260px;
+      text-align: start;
+      padding-bottom: 8px;
+    }
+
+    @include on-desktop-plus {
+      padding-bottom: 40px;
+      width: 280px;
+      text-align: start;
+    }
+  }
+
+  &__title {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 85%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: $c-orange-accent;
+
+    @include on-tablet {
+      padding-bottom: 200px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 80px;
+      line-height: 85%;
+      text-align: center;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+    }
+
+    @include on-desktop {
+      font-size: 135px;
+      line-height: 85%;
+      padding-bottom: 64px;
+    }
+
+    @include on-desktop-plus {
+      padding-bottom: 70px;
+      font-size: 117px;
+      line-height: 85%;
+      letter-spacing: -0.06em;
+    }
+  }
+
+  &__photo {
+    width: 288px;
+    height: 290px;
+    margin: 0 auto;
+
+    background-image: url(images/Cookie.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include on-tablet {
+      display: none;
+    }
+
+    @include on-desktop {
+      display: none;
+    }
+
+    @include on-desktop-plus {
+      display: none;
+    }
+  }
+
+  &__button {
+    @include on-tablet {
+      margin: 0 auto;
+    }
+  }
+}
