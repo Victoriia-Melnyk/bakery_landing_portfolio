@@ -1,18 +1,5 @@
 .blog {
-  background-image: url(images/Crumbs.png);
-  background-repeat: no-repeat;
-  background-position: center top 130px;
-  background-size: 320px;
-
-  @include on-tablet {
-    background-image: none;
-  }
-
-  @include on-desktop {
-    background-image: none;
-  }
-
-  @include on-desktop-plus {
+  @include on-tablet-and-above {
     background-image: none;
   }
 

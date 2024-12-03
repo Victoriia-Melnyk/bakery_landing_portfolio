@@ -20,30 +20,35 @@
   background-color: $c-pink-light;
   scroll-behavior: smooth;
 
-  @include on-tablet {
-    background-image: url(images/Crumbs.png);
-    background-repeat: no-repeat;
-    background-position: center top 3200px;
-    background-size: 530px;
-  }
-
-  @include on-desktop {
-    background-image: url(images/Crumbs.png);
-    background-repeat: no-repeat;
-    background-position: center bottom 670px;
-    background-size: 600px;
-  }
-
-  @include on-desktop-plus {
-    background-image: url(images/Crumbs.png);
-    background-repeat: no-repeat;
-    background-position: center bottom 670px;
-    background-size: 600px;
-  }
-
   &__body {
     margin: 0;
     font-family: Inter, sans-serif;
+  }
+
+  &__main {
+    padding-bottom: 72px;
+    background-image: url(images/Crumbs.png);
+    background-repeat: no-repeat;
+    background-position: center calc(100% - 245px);
+    background-size: 320px 300px;
+
+    @include on-tablet {
+      padding-bottom: 152px;
+      background-size: 526px 493px;
+      background-position: center calc(100% - 230px);
+    }
+
+    @include on-desktop {
+      padding-bottom: 350px;
+      background-size: 718px 673px;
+      background-position: 325px calc(100% - 100px);
+    }
+
+    @include on-desktop-plus {
+      padding-bottom: 350px;
+      background-size: 718px 673px;
+      background-position: 360px calc(100% - 125px);
+    }
   }
 
   &__menu {
@@ -88,22 +93,6 @@
 
     @include on-desktop-plus {
       margin-bottom: 144px;
-    }
-  }
-
-  &__section-blog {
-    margin-bottom: 72px;
-
-    @include on-tablet {
-      margin-bottom: 152px;
-    }
-
-    @include on-desktop {
-      margin-bottom: 350px;
-    }
-
-    @include on-desktop-plus {
-      margin-bottom: 350px;
     }
   }
 
