@@ -53,28 +53,36 @@ Before running this project, make sure you have the following installed:
 ## **Installation Instructions**
 
 1. **Clone the Repository in your terminal**:
-  ```bash
+
+  ```bash 
   git clone https://github.com/Victoriia-Melnyk/bakery_landing_portfolio.git
+  ```
 
 2. **Open the cloned project in your IDE (e.g., VSCode)**
 
 3. **Install Dependencies:**
+
   Using npm:
   ```bash
   npm install
+  ```
 
   Or, if you prefer yarn:
   ```bash
   yarn install
+  ```
 
 4. **Start the Development Server:**
+
   Using npm:
   ```bash
   npm start
+  ```
 
   Or with yarn:
   ```bash
   yarn start
+  ```
 
 
 After running this command, the project will automatically open in your default browser.
